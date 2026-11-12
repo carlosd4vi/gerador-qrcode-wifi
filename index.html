@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Gerador de QR Code Wi-Fi</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"#d2d9f4","on-primary-container":"#c1beff","primary":"#2a14b4","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface-tint":"#5148d7","on-secondary-fixed":"#001d31","surface-container-high":"#e2e7ff","secondary-fixed-dim":"#93ccff","on-tertiary-fixed":"#002113","surface-bright":"#faf8ff","tertiary-fixed-dim":"#4edea3","surface-container-highest":"#dae2fd","surface":"#faf8ff","inverse-on-surface":"#eef0ff","surface-container":"#eaedff","on-tertiary-fixed-variant":"#005236","on-primary-fixed-variant":"#372abf","primary-fixed":"#e3dfff","background":"#faf8ff","error":"#ba1a1a","on-primary-fixed":"#100069","outline-variant":"#c7c4d7","on-background":"#131b2e","primary-container":"#4338ca","secondary":"#006398","on-error":"#ffffff","surface-container-low":"#f2f3ff","secondary-fixed":"#cce5ff","on-primary":"#ffffff","on-error-container":"#93000a","on-secondary-container":"#00476e","on-surface-variant":"#464554","tertiary-container":"#005e3f","surface-variant":"#dae2fd","primary-fixed-dim":"#c3c0ff","on-secondary":"#ffffff","outline":"#777586","on-secondary-fixed-variant":"#004b73","inverse-primary":"#c3c0ff","tertiary-fixed":"#6ffbbe","on-tertiary-container":"#4ddda2","tertiary":"#00442d","secondary-container":"#5bb8fe","on-surface":"#131b2e","on-tertiary":"#ffffff","inverse-surface":"#283044"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-mobile":"1rem","margin":"2rem","space-md":"1rem","gutter":"1.5rem","space-lg":"1.5rem","space-xs":"0.25rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2.5rem"},"fontFamily":{"display-lg":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"display-lg-mobile":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"code-sm":["JetBrains Mono"],"headline-sm":["Inter"]},"fontSize":{"display-lg":["3rem",{"lineHeight":"1.15","letterSpacing":"-0.03em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.5","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["0.75rem",{"lineHeight":"1.25","letterSpacing":"0.02em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25","letterSpacing":"0.01em","fontWeight":"500"}],"body-sm":["0.75rem",{"lineHeight":"1.4","letterSpacing":"0em","fontWeight":"400"}],"display-lg-mobile":["2rem",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5","letterSpacing":"-0.005em","fontWeight":"400"}],"code-sm":["0.8125rem",{"lineHeight":"1.4","letterSpacing":"0em","fontWeight":"500"}],"headline-sm":["1.125rem",{"lineHeight":"1.4","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-[1120px] mx-auto px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[22px]">wifi</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Wi-Fi QR Code</span></div></div><div class="hidden sm:flex items-center gap-space-xs"><span class="inline-flex items-center px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Simples</span><span class="inline-flex items-center px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Gratuito</span><span class="inline-flex items-center px-space-sm py-space-xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">Seguro</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="max-w-[1120px] mx-auto px-gutter py-space-lg"><div class="flex flex-col w-full">
+<div class="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-gutter items-start">
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-wider">Configuração Local • Sem Registro</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Conecte seus clientes com um toque</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Crie códigos QR padronizados compatíveis com iOS, Android e câmeras inteligentes. As informações não saem do seu navegador.
+        </p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="input-ssid">Nome da Rede (SSID)</label>
+<div class="relative flex items-center group cursor-pointer">
+<span class="material-symbols-outlined text-[18px] text-outline hover:text-primary transition-colors">info</span>
+<div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 hidden group-hover:flex flex-col items-center z-50 pointer-events-none transition-all duration-200">
+<div class="bg-inverse-surface text-inverse-on-surface font-body-sm text-body-sm px-space-sm py-1.5 rounded shadow-lg whitespace-nowrap">
+                    O nome tem que ser escrito exatamente igual
+                  </div>
+<div class="w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-inverse-surface -mt-0.5"></div>
+</div>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sensível a maiúsculas</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[20px] text-outline absolute left-3 pointer-events-none">router</span>
+<input class="w-full h-10 pl-10 pr-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder-outline/60 focus:bg-surface-container-low transition-all duration-150 outline-none focus:outline-primary-container" id="input-ssid" placeholder="Ex: MinhaCasa_Wi-Fi, Escritorio-5G" type="text" value="MinhaRede_5G"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Este é o identificador que aparece na lista de redes Wi-Fi.</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Tipo de Segurança</label>
+<div class="grid grid-cols-3 gap-1 bg-surface-container p-1 rounded-xl" id="security-selector">
+<button class="sec-option py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 bg-surface-container-lowest text-primary-container shadow-sm font-semibold flex items-center justify-center gap-1" data-sec="WPA" type="button">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>WPA/WPA2/WPA3</span>
+</button>
+<button class="sec-option py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1" data-sec="WEP" type="button">
+<span class="material-symbols-outlined text-[16px]">lock_clock</span>
+<span>WEP</span>
+</button>
+<button class="sec-option py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1" data-sec="nopass" type="button">
+<span class="material-symbols-outlined text-[16px]">no_encryption</span>
+<span>Sem Senha</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs transition-opacity duration-200" id="password-field-container">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="input-password">Senha da Rede</label>
+<span class="font-code-sm text-code-sm text-on-surface-variant" id="char-count">12 caracteres</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[20px] text-outline absolute left-3 pointer-events-none">key</span>
+<input class="w-full h-10 pl-10 pr-10 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder-outline/60 focus:bg-surface-container-low transition-all duration-150 outline-none focus:outline-primary-container" id="input-password" placeholder="Digite a senha da sua rede" type="password" value="SenhaSegura2025"/>
+<button class="absolute right-2 w-8 h-8 flex items-center justify-center rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" id="toggle-password" title="Alternar exibição da senha" type="button">
+<span class="material-symbols-outlined text-[20px]" id="password-icon">visibility</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Insira a chave de segurança exata do roteador.</span>
+</div>
+<div class="pt-1 flex items-start gap-space-sm cursor-pointer select-none" id="hidden-toggle-wrap">
+<div class="relative flex items-center pt-0.5">
+<input class="peer sr-only" id="check-hidden" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container peer-checked:bg-primary-container peer-focus:outline-2 peer-focus:outline-primary-container transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-primary opacity-0 peer-checked:opacity-100 transition-opacity">check</span>
+</div>
+</div>
+<label class="flex flex-col cursor-pointer" for="check-hidden">
+<span class="font-label-md text-label-md text-on-surface">Rede Oculta (Hidden SSID)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Marque se o seu roteador não divulga o nome publicamente no ar.</span>
+</label>
+</div>
+<div class="pt-space-sm flex flex-col sm:flex-row items-stretch gap-space-sm">
+<button class="w-full sm:flex-1 h-12 sm:h-10 px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs shadow-sm active:scale-[0.99] transition-all" id="btn-generate" type="button">
+<span class="material-symbols-outlined text-[20px]">qr_code_2</span>
+<span>Gerar QR Code</span>
+</button>
+<button class="w-full sm:w-auto h-12 sm:h-10 px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center justify-center gap-space-xs shadow-sm active:scale-[0.99] transition-all" id="btn-clear" type="button">
+<span class="material-symbols-outlined text-[18px]">backspace</span>
+<span class="sm:hidden">Limpar</span><span class="hidden sm:inline">Limpar campos</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Padronizado para Wi-Fi Alliance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Formato universal URI <code class="font-code-sm text-code-sm text-primary">WIFI:S:...;T:...;P:...;;</code></span>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">v2.4 Offline</span>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-md lg:sticky lg:top-20">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col items-center text-center">
+<div class="w-full flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pré-visualização</span>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span id="preview-status">Pronto para escanear</span>
+</div>
+</div>
+<div class="relative bg-surface-container-lowest p-5 rounded-xl shadow-md flex items-center justify-center max-w-[280px] w-full aspect-square mb-space-md group">
+<div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-primary/10 via-secondary-container/20 to-tertiary-fixed/20 blur-lg -z-10 opacity-70 group-hover:opacity-100 transition-opacity"></div>
+<img id="qr-image" 
+     class="w-full h-full object-contain rounded-xl shadow-sm transition-transform duration-300" 
+     src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=WIFI%3AS%3AMinhaRede_5G%3BT%3AWPA%3BP%3ASenhaSegura2025%3B%3B" 
+     alt="QR Code Wi-Fi Dinâmico" />
+<rect fill="#ffffff" height="32" rx="8" width="32" x="84" y="84"></rect>
+<circle cx="100" cy="100" fill="#4338ca" r="14"></circle>
+<path d="M94 98 C96 95, 104 95, 106 98 M96 101 C98 99, 102 99, 104 101 M100 104.5 A1 1 0 1 1 100 104.4" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div class="w-full bg-surface-container rounded-xl p-space-sm flex flex-col gap-1.5 mb-space-md text-left">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rede:</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate max-w-[200px]" id="badge-ssid">MinhaRede_5G</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Segurança:</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary font-semibold" id="badge-security">WPA/WPA2/WPA3</span>
+</div>
+<div class="hidden items-center justify-between" id="badge-hidden-row">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Visibilidade:</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility_off</span> Rede Oculta
+            </span>
+</div>
+</div>
+<div class="w-full grid grid-cols-2 gap-space-xs mb-space-xs">
+<button class="h-9 px-space-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" id="btn-download-png" type="button">
+<span class="material-symbols-outlined text-[18px]">image</span>
+<span>Baixar PNG</span>
+</button>
+<button class="h-9 px-space-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" id="btn-download-svg" type="button">
+<span class="material-symbols-outlined text-[18px]">4g_mobiledata</span>
+<span>Baixar SVG</span>
+</button>
+</div>
+<button class="w-full h-10 px-space-sm rounded-lg bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim font-label-md text-label-md flex items-center justify-center gap-space-xs transition-colors shadow-sm" id="btn-print-sign" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Imprimir Plaquinha para Convidados</span>
+</button>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-left bg-surface-container-lowest">
+<span class="material-symbols-outlined text-[22px] text-primary shrink-0">photo_camera</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Aponte a câmera do smartphone para se conectar automaticamente sem digitar a senha.
+          </span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Payload do QR</span>
+<button class="font-label-sm text-label-sm text-primary hover:text-primary-container flex items-center gap-0.5" id="btn-copy-payload" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copiar string</span>
+</button>
+</div>
+<div class="bg-surface-container rounded-lg p-2 overflow-x-auto">
+<code class="font-code-sm text-code-sm text-on-surface whitespace-nowrap block" id="raw-payload">WIFI:S:MinhaRede_5G;T:WPA;P:SenhaSegura2025;;</code>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden print:flex fixed inset-0 bg-white z-[9999] flex-col items-center justify-center p-8 text-center text-black" id="print-sheet">
+<div class="border-2 border-dashed border-gray-300 p-8 rounded-2xl max-w-sm w-full flex flex-col items-center">
+<span class="text-sm font-semibold tracking-widest uppercase text-gray-500 mb-1">Wi-Fi para Visitantes</span>
+<h2 class="text-2xl font-bold text-gray-900 mb-4" id="print-ssid">MinhaRede_5G</h2>
+<div class="w-48 h-48 bg-white p-2 rounded-xl border border-gray-200 shadow-sm flex items-center justify-center mb-4">
+<div id="print-qr-placeholder"></div>
+</div>
+<p class="text-xs text-gray-600 mb-1">Aponte sua câmera para conectar instantaneamente</p>
+<div class="text-xs font-mono bg-gray-100 px-3 py-1 rounded text-gray-700 mt-2">
+        Senha: <span class="font-bold" id="print-password">SenhaSegura2025</span>
+</div>
+</div>
+</div>
+<script>
+    (function initWifiGenerator() {
+      const ssidInput = document.getElementById('input-ssid');
+      const passwordInput = document.getElementById('input-password');
+      const passwordContainer = document.getElementById('password-field-container');
+      const hiddenCheck = document.getElementById('check-hidden');
+      const togglePassBtn = document.getElementById('toggle-password');
+      const passIcon = document.getElementById('password-icon');
+      const charCount = document.getElementById('char-count');
+      const badgeSsid = document.getElementById('badge-ssid');
+      const badgeSecurity = document.getElementById('badge-security');
+      const badgeHiddenRow = document.getElementById('badge-hidden-row');
+      const rawPayload = document.getElementById('raw-payload');
+      const btnClear = document.getElementById('btn-clear');
+      const btnGenerate = document.getElementById('btn-generate');
+      const btnCopyPayload = document.getElementById('btn-copy-payload');
+      const btnDownloadSvg = document.getElementById('btn-download-svg');
+      const btnDownloadPng = document.getElementById('btn-download-png');
+      const btnPrintSign = document.getElementById('btn-print-sign');
+      const secButtons = document.querySelectorAll('.sec-option');
+      
+      let currentSecurity = 'WPA';
+
+      function updatePayload() {
+        const ssid = ssidInput.value.trim() || 'MinhaRede_5G';
+        const pass = passwordInput.value;
+        const isHidden = hiddenCheck.checked;
+        
+        let typeStr = currentSecurity;
+        if (currentSecurity === 'nopass') typeStr = 'nopass';
+
+        let str = `WIFI:S:${ssid};`;
+        if (currentSecurity !== 'nopass') {
+          str += `T:${typeStr};P:${pass};`;
+        } else {
+          str += `T:nopass;`;
+        }
+        if (isHidden) {
+          str += `H:true;`;
+        }
+        str += `;`;
+
+        rawPayload.textContent = str;
+        badgeSsid.textContent = ssid;
+        
+        if (currentSecurity === 'nopass') {
+          badgeSecurity.textContent = 'Sem Senha (Aberta)';
+        } else if (currentSecurity === 'WEP') {
+          badgeSecurity.textContent = 'WEP Legacy';
+        } else {
+          badgeSecurity.textContent = 'WPA/WPA2/WPA3';
+        }
+
+        if (isHidden) {
+          badgeHiddenRow.classList.remove('hidden');
+          badgeHiddenRow.classList.add('flex');
+        } else {
+          badgeHiddenRow.classList.remove('flex');
+          badgeHiddenRow.classList.add('hidden');
+        }
+
+        charCount.textContent = `${pass.length} caracteres`;
+      }
+
+      secButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          secButtons.forEach(b => {
+            b.className = 'sec-option py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1';
+          });
+          btn.className = 'sec-option py-2 px-3 rounded-lg text-center font-label-md text-label-md transition-all duration-150 bg-surface-container-lowest text-primary-container shadow-sm font-semibold flex items-center justify-center gap-1';
+          
+          currentSecurity = btn.getAttribute('data-sec');
+          
+          if (currentSecurity === 'nopass') {
+            passwordContainer.style.opacity = '0.4';
+            passwordInput.disabled = true;
+          } else {
+            passwordContainer.style.opacity = '1';
+            passwordInput.disabled = false;
+          }
+          updatePayload();
+        });
+      });
+
+      togglePassBtn.addEventListener('click', () => {
+        if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+          passIcon.textContent = 'visibility_off';
+          passwordInput.classList.add('font-code-sm');
+        } else {
+          passwordInput.type = 'password';
+          passIcon.textContent = 'visibility';
+          passwordInput.classList.remove('font-code-sm');
+        }
+      });
+
+      ssidInput.addEventListener('input', updatePayload);
+      passwordInput.addEventListener('input', updatePayload);
+      hiddenCheck.addEventListener('change', updatePayload);
+
+      btnClear.addEventListener('click', () => {
+        ssidInput.value = '';
+        passwordInput.value = '';
+        hiddenCheck.checked = false;
+        secButtons[0].click();
+        ssidInput.focus();
+        updatePayload();
+      });
+
+      function renderizarQRCodeAPI() {
+        const payloadStr = rawPayload.textContent;
+        const qrImage = document.getElementById('qr-image');
+        const apiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(payloadStr)}`;
+        
+        qrImage.style.opacity = '0.5';
+        qrImage.src = apiUrl;
+        
+        qrImage.onload = () => {
+          qrImage.style.opacity = '1';
+        };
+      }
+
+      btnGenerate.addEventListener('click', () => {
+        updatePayload();
+        renderizarQRCodeAPI();
+        
+        const previewStatus = document.getElementById('preview-status');
+        previewStatus.textContent = 'Gerado com sucesso!';
+        
+        if(window.innerWidth < 1024) {
+           document.getElementById('qr-image').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        setTimeout(() => {
+          previewStatus.textContent = 'Pronto para escanear';
+        }, 2000);
+      });
+
+      btnCopyPayload.addEventListener('click', () => {
+        navigator.clipboard.writeText(rawPayload.textContent).then(() => {
+          const originalText = btnCopyPayload.innerHTML;
+          btnCopyPayload.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span> Copiado!';
+          setTimeout(() => {
+            btnCopyPayload.innerHTML = originalText;
+          }, 2000);
+        });
+      });
+
+      async function forceDownloadFromUrl(url, fileName) {
+        try {
+          const response = await fetch(url);
+          const blob = await response.blob();
+          const blobUrl = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = blobUrl;
+          link.download = fileName;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(blobUrl);
+        } catch (err) {
+          window.open(url, '_blank');
+        }
+      }
+
+      btnDownloadSvg.addEventListener('click', () => {
+        const payloadStr = rawPayload.textContent;
+        const svgUrl = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&format=svg&data=${encodeURIComponent(payloadStr)}`;
+        forceDownloadFromUrl(svgUrl, `wifi-${ssidInput.value || 'rede'}-qrcode.svg`);
+      });
+
+      btnDownloadPng.addEventListener('click', () => {
+        const payloadStr = rawPayload.textContent;
+        const pngUrl = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&format=png&data=${encodeURIComponent(payloadStr)}`;
+        forceDownloadFromUrl(pngUrl, `wifi-${ssidInput.value || 'rede'}-qrcode.png`);
+      });
+
+      btnPrintSign.addEventListener('click', () => {
+        document.getElementById('print-ssid').textContent = ssidInput.value || 'Wi-Fi Convidados';
+        document.getElementById('print-password').textContent = currentSecurity === 'nopass' ? 'Sem senha' : (passwordInput.value || '---');
+        
+        const printPlaceholder = document.getElementById('print-qr-placeholder');
+        printPlaceholder.innerHTML = '';
+        
+        const imgClone = document.getElementById('qr-image').cloneNode(true);
+        imgClone.className = 'w-full h-full object-contain';
+        printPlaceholder.appendChild(imgClone);
+        
+        window.print();
+      });
+
+      updatePayload();
+      renderizarQRCodeAPI();
+    })();
+  </script>
+</div></div></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="max-w-[1120px] mx-auto px-gutter py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">lock_outline</span><span class="font-body-sm text-body-sm text-on-surface-variant">Nenhum dado de rede ou senha é enviado a servidores. Processamento 100% local no seu navegador.</span></div><div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm"><a target="_blank" class="hover:text-on-surface transition-colors" data-path="privacy-security" href="https://goqr.me/de/rechtliches/datenschutz-goqrme.html">Termos e Privacidade</a></div></div></footer></body></html>
